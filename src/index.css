@@ -1,0 +1,67 @@
+/*
+ * Global styles + design tokens.
+ *
+ * Tailwind v4 is configured in CSS (no tailwind.config.js). Anything declared inside
+ * `@theme` automatically becomes a utility class, for example:
+ *   --color-primary  ->  bg-primary, text-primary, border-primary ...
+ *   --shadow-card    ->  shadow-card
+ * so the whole design system lives in one place.
+ */
+@import "tailwindcss";
+
+@theme {
+  /* Font: loaded from Google Fonts in index.html */
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand colours */
+  --color-primary: #003459; /* main brand blue (buttons, headings) */
+  --color-navy: #002a48; /* darker blue (hover states, dark panels) */
+  --color-cream: #fceed5; /* warm background */
+  --color-cream-soft: #fdf6e8; /* lighter cream (inputs on white) */
+  --color-yellow: #f7dba7; /* decorative accent */
+  --color-ink: #00171f; /* body text */
+  --color-muted: #667479; /* secondary text */
+  --color-sky: #00a7e7; /* badges / count bubbles */
+
+  /* Semantic colours (feedback states) */
+  --color-success: #389b75;
+  --color-success-soft: #e6f4ee;
+  --color-error: #d94f4f;
+  --color-error-soft: #fdeeee;
+
+  /* Card shadows */
+  --shadow-card: 0 4px 24px rgb(0 23 31 / 0.08);
+  --shadow-card-hover: 0 8px 32px rgb(0 23 31 / 0.14);
+}
+
+@layer base {
+  /* Smooth scrolling for in-page anchors */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+
+  /* Tailwind v4 resets buttons to the default cursor; restore the pointer */
+  button {
+    cursor: pointer;
+  }
+
+  /* Visible keyboard focus ring for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-sky);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /*
+   * Centred page column used by every section.
+   * 1140px max width on desktop, small side padding on mobile.
+   */
+  .container-page {
+    @apply mx-auto w-full max-w-[1140px] px-4 sm:px-6 lg:px-0;
+  }
+}
