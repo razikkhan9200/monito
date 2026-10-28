@@ -10,7 +10,14 @@
  *   image    - photo URL
  *   gift     - free gift text shown in the cream strip on the card
  */
-import { px } from "../utils/format";
+import prod1 from "../assets/prod1.jpg";
+import prod2 from "../assets/prod2.jpg";
+import prod3 from "../assets/prod3.jpg";
+import prod4 from "../assets/prod4.jpg";
+import prod5 from "../assets/prod5.jpg";
+import prod6 from "../assets/prod6.jpg";
+import prod7 from "../assets/prod7.jpg";
+import prod8 from "../assets/prod8.jpg";
 
 export const products = [
   {
@@ -19,7 +26,7 @@ export const products = [
     category: "Cat Food",
     size: "385gr",
     price: 140000,
-    image: px(17309676),
+    image: prod1,
     gift: "Free Toy & Free Shaker",
   },
   {
@@ -28,7 +35,7 @@ export const products = [
     category: "Cat Food",
     size: "1.5kg",
     price: 165000,
-    image: px(33514581),
+    image: prod2,
     gift: "Free Toy & Free Shaker",
   },
   {
@@ -36,7 +43,7 @@ export const products = [
     name: "Cat scratching ball toy kitten sisal rope ball",
     category: "Toy",
     price: 1100000,
-    image: px(16577552),
+    image: prod3,
     gift: "Free Cat Food",
   },
   {
@@ -44,7 +51,7 @@ export const products = [
     name: "Cute Pet Cat Warm Nest",
     category: "Toy",
     price: 410000,
-    image: px(27279130),
+    image: prod4,
     gift: "Free Cat Food",
   },
   {
@@ -53,7 +60,7 @@ export const products = [
     category: "Dog Food",
     size: "200gr",
     price: 350000,
-    image: px(16577568),
+    image: prod5,
     gift: "Free Toy & Free Shaker",
   },
   {
@@ -61,7 +68,7 @@ export const products = [
     name: "Costumes Fashion Pet Cowboy",
     category: "Costume",
     price: 500000,
-    image: px(15006378),
+    image: prod6,
     gift: "Free Toy & Free Shaker",
   },
   {
@@ -69,8 +76,8 @@ export const products = [
     name: "Costumes Chicken Drumstick Headband",
     category: "Costume",
     price: 400000,
-    image: px(9660361),
+    image: prod7,
     gift: "Free Cat Food",
   },
-  { id: "P08", name: "Plush Pet Toy", category: "Toy", price: 250000, image: px(10914514), gift: "Free Cat Food" },
+  { id: "P08", name: "Plush Pet Toy", category: "Toy", price: 250000, image: prod8, gift: "Free Cat Food" },
 ];

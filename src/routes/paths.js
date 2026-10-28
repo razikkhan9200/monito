@@ -17,5 +17,7 @@ export const PATHS = {
  */
 export const NAV_LINKS = [
   { label: "Home", to: PATHS.home },
-  { label: "Components", to: PATHS.designSystem },
+  { label: "Category", to: "/#pets" },
+  { label: "About", to: "/#adopt" },
+  { label: "Contact", to: "/#subscribe" },
 ];
